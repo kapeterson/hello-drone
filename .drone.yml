@@ -15,7 +15,7 @@ name: default
 
 platform:
   os: darwin
-#   arch: amd64
+  arch: amd64
 
 steps:
 - name: greeting
