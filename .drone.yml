@@ -17,11 +17,11 @@ platform:
   os: darwin
   arch: amd64
 
-deps:
-  image: docker:git
-  commands:
-  - git clone https://github.com/kapeterson/GoApi.git
-  
+# deps:
+#   image: docker:git
+#   commands:
+#   - git clone https://github.com/kapeterson/GoApi.git
+
 steps:
 - name: greeting
   commands:
