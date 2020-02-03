@@ -30,5 +30,7 @@ steps:
   - pwd
   - git clone https://github.com/kapeterson/cs.git
   - ls cs/python
+  - echo checking /tmp
+  - ls /tmp
   - docker run --mount type=bind,source="$(pwd)"/body.json,target=/tmp hello-world
   - docker run --rm --mount type=bind,source="$(pwd)"/cs/python/count.py,target=/tmp/hello.py kp/python-test python count.py
