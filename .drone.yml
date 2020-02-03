@@ -22,3 +22,4 @@ steps:
   commands:
   - echo hello world
   - echo bro wassup son
+  - docker run hello-world
