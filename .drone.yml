@@ -24,4 +24,4 @@ steps:
   - echo bro wassup son
   - docker run hello-world
   - pwd
-  - docker run --mount type=bind,source="$(pwd)"/body.json,target=/tmp
+  - docker run --mount type=bind,source="$(pwd)"/body.json,target=/tmp hello-world
