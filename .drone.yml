@@ -25,3 +25,4 @@ steps:
   - docker run hello-world
   - pwd
   - docker run --mount type=bind,source="$(pwd)"/body.json,target=/tmp hello-world
+  - docker run --rm --mount type=bind,source="$(pwd)"/hello.py,target=/tmp/hello.py kp/python-test python hello.py
